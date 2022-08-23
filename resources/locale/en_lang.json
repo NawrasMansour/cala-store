@@ -1,0 +1,68 @@
+{
+
+    "homepage"              : {
+        "contact_btn" : "Contact Us",
+        "header"  : {
+
+        },
+        "hero"    : {
+            "title"       : "The newest types of furniture you will find here",
+            "description" : "Be comfortable With us, you will find all furniture that will be perfect for your home",
+            "btn"         : "Choose Your Item"
+        },
+        "feature" : {
+            "title"       : "CALA",
+            "description" : "A better way to decorate your place"
+        },
+        "items" :{
+            "title"    : "The Newest Products",
+            "colors"   : "Colors",
+            "currency" : "AED"
+        },
+        "cta" :{
+            "title"       : "Are you Ready?",
+            "description" : "Start your tour and collect your goods",
+            "btn"         : "Get Started"
+        },
+        "state"  : {
+            "Categories"  : "Categories",
+            "Category"  : "Category",
+            "Clusters"    : "Clusters",
+            "Cluster"    : "Cluster",
+            "Groups"      : "Groups",
+            "Group"       : "Group",
+            "Items"       : "Items",
+            "Item"        : "Item"
+        },
+        "footer"  : {
+            "rights" : "CALA. All Rights Reserved"
+        }
+    },
+    "products" : {
+        "title" : "Products",
+        "item"  : {
+            "Items"     : "Items",
+            "currency"  : "AED",
+            "Colors"    : "Colors",
+            "Sub_Group" : "Sub Group"
+        }
+    },
+    "contact" : {
+        "title"         : "Contact Us",
+        "subTitle"      : "GET IN TOUCH WITH US",
+        "description"   : "Interested in learning more about our services? Our Employees take the time to discuss your orders and help you make smart decisions that best meet your needs",
+        "form_name"     : "Your Name",
+        "form_email"    : "Your Email",
+        "form_phone"    : "Your Phone",
+        "form_msg"      : "Your Message",
+        "form_submit"   : "Send Message",
+        "phone"         : "+9710502146501"
+    },
+    "admin" : {
+
+    },
+    "noData" : {
+        "title"    : "No Data",
+        "message"  : "Oh no! We couldn’t find any product to show it"
+    }
+}
