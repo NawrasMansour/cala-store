@@ -1,21 +1,21 @@
-import { defineConfig } from 'vite';
 import path from "path";
-import laravel from 'laravel-vite-plugin';
 import reactRefresh from "@vitejs/plugin-react-refresh";
+import legacy from "@vitejs/plugin-legacy";
 
-export default defineConfig({
-    esbuild: {
+export default ({ command }) => ({
+    base: command === "serve" ? "" : "/build/",
+    publicDir: "fake_dir_so_nothing_gets_copied",
+    build: {
+        manifest: true,
+        outDir: "public/build",
+        rollupOptions: {
+            input: "resources/scripts/app.jsx",
+        },
     },
     resolve: {
         alias: {
             "@": path.resolve("./resources"),
         },
     },
-    plugins: [
-        laravel({
-            input: ["resources/css/app.css", "resources/js/app.js"],
-            refresh: true,
-        }),
-        reactRefresh()
-    ],
+    plugins: [reactRefresh(), legacy()],
 });
