@@ -4,7 +4,7 @@ import legacy from "@vitejs/plugin-legacy";
 
 export default ({ command }) => ({
     base: command === "serve" ? "" : "/build/",
-    publicDir: "fake_dir_so_nothing_gets_copied",
+    publicDir: false,
     build: {
         manifest: true,
         outDir: "public/build",
@@ -17,5 +17,9 @@ export default ({ command }) => ({
             "@": path.resolve("./resources"),
         },
     },
-    plugins: [reactRefresh(), legacy()],
+    plugins: [
+        reactRefresh(),
+        legacy(),
+
+    ],
 });
