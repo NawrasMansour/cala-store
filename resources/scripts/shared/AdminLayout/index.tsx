@@ -2,7 +2,7 @@ import React,{Fragment, useState} from 'react'
 import { InertiaLink, usePage } from '@inertiajs/inertia-react';
 import { Disclosure, Menu, Transition ,Popover} from '@headlessui/react'
 import { BellIcon, ChartBarIcon, ChevronDownIcon, CursorClickIcon, MenuIcon, RefreshIcon, ViewGridIcon, XIcon } from '@heroicons/react/outline'
-import FlashLayout from '../Alert/FlashLayout';
+import FlashLayout from '@/scripts/shared/Alert/FlashLayout';
 
 const user = {
   name: 'Tom Cook',

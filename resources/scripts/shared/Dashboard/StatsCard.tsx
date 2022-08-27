@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../Carousel';
+import Carousel from '@/scripts/shared/Carousel';
 
 const StatsCard = ({ data = {}, title }) => {
     const entries = Object.entries(data);

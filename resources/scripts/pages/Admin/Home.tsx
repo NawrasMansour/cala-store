@@ -1,4 +1,4 @@
-import StatsCard from '../../shared/Dashboard/StatsCard';
+import StatsCard from '@/scripts/shared/Dashboard/StatsCard';
 import React from 'react';
 
 const Home = ({ categories_stats, clusters_stats, groups_stats,items_stats }) => {

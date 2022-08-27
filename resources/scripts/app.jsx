@@ -1,6 +1,6 @@
 
-import '../css/app.css';
-import '../js/i18n.js'
+import '@/css/app.css';
+import '@/js/i18n.js'
 
 import { App } from '@inertiajs/inertia-react';
 import { InertiaProgress } from '@inertiajs/progress';
@@ -8,8 +8,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import ReactDOM from 'react-dom/client';
 
-import AdminLayout from './shared/AdminLayout';
-import MainLayout from './shared/MainLayout';
+import AdminLayout from '@/scripts/shared/AdminLayout';
+import MainLayout from '@/scripts/shared/MainLayout';
 
 InertiaProgress.init();
 

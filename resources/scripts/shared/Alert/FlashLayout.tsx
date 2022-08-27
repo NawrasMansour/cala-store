@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Transition } from '@headlessui/react';
 import { useRef } from 'react';
-import Alert from './Alert';
+import Alert from '@/scripts/shared/Alert/Alert';
 
 const Fade = ({ children, show }) => {
     return (
