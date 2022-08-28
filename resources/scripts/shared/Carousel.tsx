@@ -7,7 +7,7 @@ import {
     ButtonNext,
     DotGroup,
 } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
 
 
