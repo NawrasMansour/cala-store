@@ -40,7 +40,7 @@ function vite_assets(): HtmlString
     ), true);
 
     return new HtmlString("
-        <script type=\"module\" src=\"/public/build/{$manifest['resources/scripts/app.jsx']['file']}\"></script>
-        <link rel=\"stylesheet\" href=\"/public/build/{$manifest['resources/scripts/app.jsx']['css'][0]}\">
+        <script type=\"module\" src=\"/build/{$manifest['resources/scripts/app.jsx']['file']}\"></script>
+        <link rel=\"stylesheet\" href=\"/build/{$manifest['resources/scripts/app.jsx']['css'][0]}\">
     ");
 }
