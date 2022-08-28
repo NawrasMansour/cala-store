@@ -40,5 +40,7 @@ body {
 }
 
 
-
+.carousel__back-button,.carousel__next-button{
+    width: 30px;
+}
 
