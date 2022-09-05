@@ -14,6 +14,6 @@ a simple website to show the products for a furniture Gallery
 
 Runs the app in the development mode.
 - ## Backend
-### php artisab serve
+### `php artisab serve`
 - ## Frontend
-### npm run dev
+### `npm run dev`
