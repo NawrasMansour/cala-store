@@ -25,19 +25,16 @@ class ProductShopController extends Controller
         $colors = Color::all();
 
         if($request['query']){
-           $paginationItem = \collect(Item::with(['pictures','subGroup','colors'])
-                                            ->latest()
-                                            ->SearchText($request['query'])
-                                            ->paginate(9));
+            $items = Item::with(['pictures','subGroup','colors'])->latest()
+                                                                 ->SearchText($request['query']);
         }else{
-            $paginationItem = \collect(Item::with(['pictures','subGroup','colors'])
-                                            ->latest()
-                                            ->paginate(9));
+            $items = Item::with(['pictures','subGroup','colors'])->latest();
         }
 
         return Inertia::render('Main/Products/Index', [
             'title'      => 'Cala - Home',
-            'items'      => $paginationItem,
+            'all_items'  => $items->get(),
+            'items'      => \collect($items->paginate(9)),
             'categories' => $categories,
             'clusters'   => $clusters,
             'groups'     => $groups,

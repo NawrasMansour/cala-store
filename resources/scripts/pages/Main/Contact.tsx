@@ -41,7 +41,7 @@ const Contact = () => {
                   <div className="flex items-center">
                     <a href="#" className='p-2'>
                       <svg
-                        className="text-gray-600 hover:text-green-400 fill-current cursor-pointer"
+                        className="text-gray-600 hover:text-orange-400 fill-current cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -53,7 +53,7 @@ const Contact = () => {
 
                     <a href="#" className='p-2'>
                       <svg
-                        className="text-gray-600 hover:text-green-400 fill-current cursor-pointer"
+                        className="text-gray-600 hover:text-orange-400 fill-current cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         width="21"
                         height="20"
@@ -63,9 +63,9 @@ const Contact = () => {
                       </svg>
                     </a>
 
-                    <a href="#" className='p-2'>
+                    {/* <a href="#" className='p-2'>
                       <svg
-                        className="text-gray-600 hover:text-green-400 fill-current cursor-pointer"
+                        className="text-gray-600 hover:text-orange-400 fill-current cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         width="21"
                         height="18"
@@ -73,11 +73,11 @@ const Contact = () => {
                         <title>Twitter</title>
                         <path d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
                       </svg>
-                    </a>
+                    </a> */}
 
-                    <a href="#" className='p-2'>
+                    <a href="https://api.whatsapp.com/send?phone=00971508016711" className='p-2'>
                       <svg
-                        className="text-gray-600 hover:text-green-400 fill-current cursor-pointer"
+                        className="text-gray-600 hover:text-orange-400 fill-current cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
                         width="30"
@@ -92,8 +92,9 @@ const Contact = () => {
                 </div>
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
-                <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-                  <form>
+                <div className="bg-white relative rounded-lg p-1 sm:p-1 shadow-lg">
+                  <iframe  className='w-full' height="520" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14424.197199483162!2d55.42040301302539!3d25.33612666294085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5fede7964b%3A0x2a830aa19c1f6d89!2sSharjah!5e0!3m2!1sen!2sae!4v1662538746838!5m2!1sen!2sae"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  {/* <form>
                       <div className="mb-6">
                         <input
                             type="text"
@@ -179,7 +180,7 @@ const Contact = () => {
                         {t('contact.form_submit')}
                         </button>
                       </div>
-                  </form>
+                  </form> */}
                   <div>
                       <span className="absolute -top-10 -right-9 z-[-1]">
                         <svg

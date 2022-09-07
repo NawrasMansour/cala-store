@@ -40,6 +40,11 @@
     },
     "products" : {
         "title" : "Products",
+        "Categories"  : "Categories",
+        "Groups"  : "Groups",
+        "Colors"  : "Colors",
+        "Price"  : "Price",
+        "currency"  : "AED",
         "item"  : {
             "Items"     : "Items",
             "currency"  : "AED",

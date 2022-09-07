@@ -1,10 +1,11 @@
 
 import React, { Fragment, useState } from 'react'
-
+import { FilterProvider } from '@/scripts/providers/Filter/filter_context';
 import { useTranslation } from 'react-i18next'
 
 import Header from './Header';
 import Footer from './Footer';
+import { usePage } from '@inertiajs/inertia-react';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -32,6 +33,7 @@ const navItems = [
 ];
 
 const MainLayout = ({children}) => {
+  const { url, props } = usePage();
   const [t,i18n] = useTranslation();
 
   const lang_navItems = navItems.map(navItem => {
@@ -50,7 +52,7 @@ const MainLayout = ({children}) => {
   })
 
   return (
-    <>
+    <FilterProvider initialProduct={props.all_items}>
       <Header navItems={lang_navItems} />
       <div className='content bg-gray-100'>
           {children}
@@ -58,7 +60,7 @@ const MainLayout = ({children}) => {
 
       <Footer navItems={lang_navItems} />
 
-    </>
+    </FilterProvider>
   )
 }
 

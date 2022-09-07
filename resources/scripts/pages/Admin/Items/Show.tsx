@@ -30,7 +30,7 @@ const Show = (props) => {
           <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
             <div className="mt-2 flex items-center text-sm text-gray-500">
               <BriefcaseIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-              {props.item?.colors.reduce( (total , color) => total += color.pivot.count ,0)} Items
+              {props.item?.colors.reduce( (total , color) => total += Number(color.pivot.count) ,0)} Items
             </div>
             <div className="mt-2 flex items-center text-sm text-gray-500">
               <CurrencyDollarIcon className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />

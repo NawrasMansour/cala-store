@@ -5,6 +5,10 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import en_lang from "../locale/en_lang.json";
 import ar_lang from "../locale/ar_lang.json";
 
+const getLocalStorage = () => {
+    let lang = localStorage.getItem("i18nextLng");
+    return lang ? lang : "en";
+};
 
 const resources = {
     en: {
@@ -19,7 +23,7 @@ i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
         resources,
-        lng: "en",
+        lng: getLocalStorage(),
 
         interpolation: {
             escapeValue: false,

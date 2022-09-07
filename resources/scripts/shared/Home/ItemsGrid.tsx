@@ -45,7 +45,7 @@ const ItemsGrid = ({data , title , pagination}) => {
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{product.colors.length} {t('homepage.items.colors')}</p>
                 </div>
-                <p className="text-sm font-medium text-gray-900">{t('homepage.items.currency')} {product.price}</p>
+                <p className="text-sm font-medium text-gray-900">{t('homepage.items.currency')} {Number(product.price).toFixed()}</p>
               </div>
             </div>
             ))}

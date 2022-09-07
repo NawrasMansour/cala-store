@@ -40,6 +40,11 @@
     },
     "products" : {
         "title" : "المنتجات",
+        "Categories"  : "التصنيفات",
+        "Groups"  : "المجموعات",
+        "Colors"    : "الألوان",
+        "Price"  : "السعر",
+        "currency"  : "درهم",
         "item"  : {
             "Items"     : "منتج",
             "currency"  : "درهم",
